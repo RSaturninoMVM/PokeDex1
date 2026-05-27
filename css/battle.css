@@ -76,6 +76,7 @@ header {
 .zona {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .acciones {
@@ -99,7 +100,7 @@ header {
     color: white;
 }
 
-.mochila {
+.capturar {
     width: 243px;
     height: 50px;
 }
@@ -141,4 +142,37 @@ header {
 
 .ganar-demostracion:hover {
     transform: scale(1.10);
+}
+
+#contenedor-enemigo {
+    position: absolute;
+    top: 300px;
+    right: 150px; 
+}
+#contenedor-amigo {
+    position: absolute;
+    bottom: 225px;
+    left: 175px;
+}
+
+
+#pokemon-enemigo, #pokemon-amigo {
+    width: 200px;
+    height: 200px;
+}
+
+.barra-vida-enemigo, .barra-vida-amigo {
+    width: 200px;
+    height: 15px;
+    background-color: red;
+    border: 2px solid black;
+    margin-top: -10px;
+}
+
+
+#vida-enemigo, #vida-amigo {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 255, 34);
+    transition: width 0.3s ease;
 }
